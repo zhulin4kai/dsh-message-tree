@@ -31,6 +31,8 @@ client.js           界面：侧边栏、消息操作条、原生输入框回退
 dsh-plugin-message-tree
 ```
 
+> npm 发布需要账号 2FA；当前尚未发布时，请使用下面的 GitHub 或本地目录安装。
+
 
 ### 通过 GitHub
 
