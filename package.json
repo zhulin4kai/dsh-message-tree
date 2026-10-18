@@ -1,0 +1,52 @@
+{
+  "name": "dsh-plugin-message-tree",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "DSH 消息树：在同一个对话内编辑或回退消息、切换分支，并恢复附件。",
+  "license": "MIT",
+  "author": "zhulin4kai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhulin4kai/dsh-message-tree.git"
+  },
+  "homepage": "https://github.com/zhulin4kai/dsh-message-tree#readme",
+  "bugs": {
+    "url": "https://github.com/zhulin4kai/dsh-message-tree/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "message-tree",
+    "branching"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "displayName": "DSH-消息树",
+    "description": "在同一个对话内回退、编辑和切换分支，侧边栏始终只显示当前分支。",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

@@ -14,29 +14,40 @@
 
 ## 目录
 
-本仓库包含两个需要分别安装的 bundle：
+仓库根目录就是插件包，Host 和界面在同一个 bundle 内：
 
 ```text
-dsh-plugin-message-tree/        Host：分支树、fork、发送、附件、树级操作
-dsh-plugin-message-tree-client/ Client UI：侧边栏、消息操作条、原生输入框回退
+index.js            Host：分支树、fork、发送、附件、树级操作
+client.js           界面：侧边栏、消息操作条、原生输入框回退
 ```
 
 ## 安装
 
-DSH 的「添加插件」页面不是插件市场搜索页，只接受包名、GitHub 仓库地址或本地目录；仅在 GitHub 公开的仓库不会出现在可搜索列表里。
+### 通过 npm
 
-先克隆仓库：
+在 DSH 的「插件」→「添加插件」中输入包名：
+
+```text
+dsh-plugin-message-tree
+```
+
+### 通过 GitHub
+
+在「添加插件」中输入仓库地址：
+
+```text
+https://github.com/zhulin4kai/dsh-message-tree
+```
+
+### 本地目录
 
 ```bash
 git clone https://github.com/zhulin4kai/dsh-message-tree.git
 ```
 
-然后在 DSH 的「插件」→「添加插件」中，把下面两个**绝对路径**分别添加一次：
+然后在「添加插件」中填写仓库根目录的绝对路径。
 
-1. `<仓库路径>/dsh-plugin-message-tree`（Host）
-2. `<仓库路径>/dsh-plugin-message-tree-client`（界面）
-
-两个包都安装后重新加载页面。如果界面 bundle 没有在启动时被扫描到，重启一次 DSH。
+安装后重新加载页面。如果界面 bundle 没有在启动时被扫描到，重启一次 DSH。
 
 ## 使用
 
