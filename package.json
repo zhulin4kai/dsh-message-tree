@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-message-tree",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "DSH 消息树：在同一个对话内编辑或回退消息、切换分支，并恢复附件。",
   "license": "MIT",
