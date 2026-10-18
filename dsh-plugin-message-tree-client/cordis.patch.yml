@@ -1,0 +1,3 @@
+- insert:
+    - id: message-tree-client
+      name: dsh-plugin-message-tree-client

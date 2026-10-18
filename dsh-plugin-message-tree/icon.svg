@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Message Tree">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#EEF7F1"/>
+  <path d="M32 16v10M32 26H18v10M32 26h14v10" fill="none" stroke="#2F9E68" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="10" y="36" width="16" height="12" rx="4" fill="#2F9E68"/>
+  <rect x="38" y="36" width="16" height="12" rx="4" fill="#7BD3A8"/>
+  <rect x="24" y="10" width="16" height="12" rx="4" fill="#1F7A50"/>
+</svg>
