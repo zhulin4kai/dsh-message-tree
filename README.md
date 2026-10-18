@@ -23,10 +23,18 @@ dsh-plugin-message-tree-client/ Client UI：侧边栏、消息操作条、原生
 
 ## 安装
 
-在 DSH 的插件管理中使用本地路径分别添加：
+DSH 的「添加插件」页面不是插件市场搜索页，只接受包名、GitHub 仓库地址或本地目录；仅在 GitHub 公开的仓库不会出现在可搜索列表里。
 
-1. `dsh-plugin-message-tree`（Host）
-2. `dsh-plugin-message-tree-client`（界面）
+先克隆仓库：
+
+```bash
+git clone https://github.com/zhulin4kai/dsh-message-tree.git
+```
+
+然后在 DSH 的「插件」→「添加插件」中，把下面两个**绝对路径**分别添加一次：
+
+1. `<仓库路径>/dsh-plugin-message-tree`（Host）
+2. `<仓库路径>/dsh-plugin-message-tree-client`（界面）
 
 两个包都安装后重新加载页面。如果界面 bundle 没有在启动时被扫描到，重启一次 DSH。
 
